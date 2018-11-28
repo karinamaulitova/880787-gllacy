@@ -13,14 +13,59 @@
         <img src="img/gllacy-logo.svg" width="" height="" alt="Логотип Gllacy">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a>
+          <form class="catalog-header">
+            <select name="catalog-header">
+              <option value="new">Новинки</option>
+              <option value="cream">Сливочное</option>
+              <option value="sorbet">Щербет</option>
+              <option value="fruit-ice">Фруктовый лед</option>
+              <option value="melorin">Мелорин</option>
+            </select>
+          </form>
+        </li>
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="company.html">О Компании</a></li>
       </ul>
     </nav>
-    <div class="search"></div>
-    <div class="login">Вход</div>
+    <div class="search">
+      <form class="search">
+        <input type="search" name="search" placeholder="Что ищем?">
+      </form>
+    </div>
+    <div class="login"><label for="login-field">Вход</label>
+      <form class="login">
+        <input type="text" name="login" id="login-field" placeholder="Электронная почта"><br>
+        <input type="password" name="password" placeholder="Пароль">
+        <a href="#" class="log-in">Войти</a>
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </form>
+    </div>
     <div class="basket">2 товара</div>
+    <div class="basket-pop-up">
+      <table>
+        <tr>
+          <td>Х</td>
+          <td><img src="img/catalog-ice-cream-1.png"></td>
+          <td>Пломбир с апельсиновым джемом</td>
+          <td>1,5 кг х 200 руб.</td>
+          <td>300 руб.</td>
+        </tr>
+        <tr>
+          <td>Х</td>
+          <td><img src="img/catalog-ice-cream-3.png"></td>
+          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td>1,5 кг х 300 руб.</td>
+          <td>450 руб.</td>
+        </tr>
+        <tr>
+          <td colspan="3">Итого:</td>
+          <td>750 руб.</td>
+        </tr>
+      </table>
+      <a href="#">Оформить заказ</a>
+    </div>
     <p class="working-hours">C 10 до 20, ежедневно</p>
     <a href="tel:88124502525">8 812 450-25-25</a>
   </header>

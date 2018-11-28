@@ -13,13 +13,35 @@
         <img src="img/gllacy-logo.svg" width="" height="" alt="Логотип Gllacy">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a>
+          <form class="catalog-header">
+            <select name="catalog-header">
+              <option value="new">Новинки</option>
+              <option value="cream">Сливочное</option>
+              <option value="sorbet">Щербет</option>
+              <option value="fruit-ice">Фруктовый лед</option>
+              <option value="melorin">Мелорин</option>
+            </select>
+          </form>
+        </li>
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="company.html">О Компании</a></li>
       </ul>
     </nav>
-    <div class="search"></div>
-    <div class="login">Вход</div>
+    <div class="search">
+      <form class="search">
+        <input type="search" name="search" placeholder="Что ищем?">
+      </form>
+    </div>
+    <div class="login"><label for="login-field">Вход</label>
+      <form class="login">
+        <input type="text" name="login" id="login-field" placeholder="Электронная почта"><br>
+        <input type="password" name="password" placeholder="Пароль">
+        <a href="#" class="log-in">Войти</a>
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </form>
+    </div>
     <div class="basket">Пусто</div>
     <p class="working-hours">C 10 до 20, ежедневно</p>
     <a href="tel:88124502525">8 812 450-25-25</a>
@@ -93,7 +115,15 @@
       <p>Для заказов по телефону:</p>
       <a href="tel:88124502525">8 812 450-25-25</a>
       <p>(c 10 до 20) ежедневно</p>
-      <!-- Здесь будет кнопка "Форма обратной связи" -->
+      <a href="#">Форма обратной связи</a>
+      <fieldset>
+        <legend>Мы обязательно вам ответим!</legend>
+        <form class="feedback">
+          <input type="text" name="name" placeholder="Как вас зовут?">
+          <input type="text" name="email" placeholder="Ваша почта для ответа?">
+          <textarea name="comment" id="comment" rows="9">Напишите что-нибудь...</textarea>
+        </form>
+      </fieldset>
     </section>
   </main>
   <footer class="main-footer">
