@@ -30,19 +30,31 @@ a {
   line-height: 16px;
 }
 
+.working-hours {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.tel-header {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 .features {
-  background-image: url("img/features-background.jpg"); 
+  background-image: url("../img/features-background.jpg");
   background-repeat: no-repeat;
-  background-position:  0 0;
+  background-position: 0 0;
 
   color: #323232;
+  text-align: left;
 }
 
 .features h3 {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  ;
 }
 
 .features-list {
@@ -50,8 +62,86 @@ a {
 }
 
 .features-list li:first-child::before {
-	background-image: url(img/ice-cream.svg);
-	background-repeat: no-repeat; 
+  background-image: url(../img/ice-cream.svg);
+  background-repeat: no-repeat;
+}
+
+.blog {
+  color: #323232;
+  text-align: left;
+
+  background: url("../img/blog-background.jpg") no-repeat 0 0;
+}
+
+.blog h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.blog a {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #323232;
+}
+
+.email {
+  color: #5a5a5a;
+  text-align: left;
+
+  background: url("email-background-svg") no-repeat 0 0;
+}
+
+.email-background {
+  background-color: #f8f7f4;
+}
+
+.social-networks,
+.site-links {
+  list-style: none;
+}
+
+.footer-navigation {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+}
+
+.footer-navigation a:focus,
+.footer-navigation a:hover {
+  color: #ffbc9e;
 }
 
 
+.copyright {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+
+  color: #fefefe;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-list {
+  text-align: center;
+
+  list-style: none;
+}
+
+.catalog-cost {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.catalog-weight {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+}
