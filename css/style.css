@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  color: #ffffff;
+}
+
+.main-navigation {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.login,
+.basket {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.features {
+  background-image: url("img/features-background.jpg"); 
+  background-repeat: no-repeat;
+  background-position:  0 0;
+
+  color: #323232;
+}
+
+.features h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  ;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list li:first-child::before {
+	background-image: url(img/ice-cream.svg);
+	background-repeat: no-repeat; 
+}
+
+
