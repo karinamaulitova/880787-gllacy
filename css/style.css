@@ -177,14 +177,14 @@ a {
   white-space: nowrap;
 }
 
-article h3 {
+.promo-item h3 {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
   text-align: left;
 }
 
-article p {
+.promo-item p {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -414,8 +414,6 @@ article p {
 }
 
 .breadcrumb a {
-  list-style: none;
-
   font-size: 14px;
   line-height: 16px;
 
@@ -499,7 +497,7 @@ article p {
   outline: 1px solid blue;
 }
 
-.main-ice-cream {
+.ice-cream-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -514,7 +512,22 @@ article p {
 .features {
   display: flex;
   flex-wrap: wrap;
+}
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list li:first-child,
+.features-list li:nth-child(3) {
+  width: 476px;
+  outline: solid 1px brown;
+}
+
+.features-list li:nth-child(2n) {
+  width: 470px;
+  outline: solid 1px brown;
 }
 
 .container-subscribe {
@@ -547,11 +560,14 @@ article p {
 }
 
 .header-item {
- width: 245px;
+  width: 245px;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 
 .main-navigation {
@@ -568,12 +584,36 @@ article p {
 
 .social-networks {
   width: 185px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .site-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-navigation {
   flex-grow: 1;
 }
 
 .copyright-item {
   width: 189px;
+}
+
+.breadcrumb {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pageing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
