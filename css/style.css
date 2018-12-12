@@ -565,7 +565,6 @@ a {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
   flex-grow: 1;
   flex-wrap: wrap;
 }
@@ -587,13 +586,11 @@ a {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .site-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .footer-navigation {
@@ -609,11 +606,10 @@ a {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .pageing {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
