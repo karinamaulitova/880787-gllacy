@@ -553,3 +553,27 @@ article p {
 .site-navigation {
   flex-grow: 1;
 }
+
+.main-navigation {
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+}
+
+.social-networks {
+  width: 185px;
+}
+
+.site-links {
+  flex-grow: 1;
+}
+
+.copyright-item {
+  width: 189px;
+}
