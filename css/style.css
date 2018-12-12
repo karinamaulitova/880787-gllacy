@@ -291,8 +291,6 @@ article p {
 }
 
 .blog {
-  width: 560px;
-
   color: #323232;
   text-align: left;
 
@@ -321,8 +319,6 @@ article p {
 }
 
 .email {
-width: 560px;
-
   color: #5a5a5a;
   text-align: left;
 
@@ -482,37 +478,61 @@ width: 560px;
   background-color: #ffffff;
 }
 
+.container {
+  width: 1146px;
+  margin: 0 auto;
+
+  outline: 1px solid red;
+}
+
 .container-promo {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
-  padding: 0 26px;
-  margin: 0;
-  margin-bottom: 40px;
+}
+
+.promo-item,
+.subscribe-item {
+  width: 560px;
+
+  outline: 1px solid blue;
 }
 
 .main-ice-cream {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
+.catalog-item {
+  width: 267px;
+
+  outline: 1px solid green;
 }
 
 .features {
   display: flex;
+  flex-wrap: wrap;
 
-  margin: 0 27px 44px;
-
-  border-radius: 15px;
 }
 
 .container-subscribe {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  padding: 0 26px;
-  margin: 0;
-  margin-bottom: 40px;
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 302px;
+}
+
+.feedback-pop-up {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 478px;
 }
