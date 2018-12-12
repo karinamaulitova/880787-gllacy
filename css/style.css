@@ -530,9 +530,26 @@ article p {
   width: 302px;
 }
 
-.feedback-pop-up {
+.pop-up {
+  display: none;
+}
+
+.main-header {
   display: flex;
   flex-wrap: wrap;
 
-  width: 478px;
+  outline: 1px solid black;
+  margin: 0;
+}
+
+.logo-item {
+  width: 154px;
+}
+
+.header-item {
+ width: 245px;
+}
+
+.site-navigation {
+  flex-grow: 1;
 }
