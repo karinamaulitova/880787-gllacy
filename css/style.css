@@ -21,15 +21,11 @@ a {
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
-
-  position: relative;
+  justify-content: flex-start;
+  padding-top: 12px;
 }
 
 .site-navigation-link {
-  position: relative;
-  top: 12px;
-  left: -31px;
-
 
   font-weight: 700;
   line-height: 18px;
@@ -539,7 +535,6 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .promo-item,
@@ -615,6 +610,9 @@ a {
   /*width: 250px;*/
   display: flex;
   flex-wrap: wrap;
+
+  justify-content: flex-end;
+  padding-top: 22px;
 }
 
 .main-navigation {
@@ -665,7 +663,7 @@ a {
 .main-header-logo {
   position: absolute;
   margin-top: 9px;
-  margin-right: 24px;
+  margin-right: 10px;
 }
 
 .catalog-pop-up {
@@ -703,20 +701,11 @@ a {
 .header-text {
   width: 100%;
   text-align: right;
-
-  position: relative;
-  right: 0px;
-  top: 26px;
 }
 
 .right-nav-link {
   display: flex;
   align-items: center;
-  
-  position: relative;
-  right: -167px;
-  top: 23px;
-
 
   padding: 6px 15px;
 
