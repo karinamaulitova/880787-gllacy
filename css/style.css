@@ -23,6 +23,7 @@ a {
   flex-wrap: wrap;
   justify-content: flex-start;
   padding-top: 12px;
+  padding-left: 11px;
 }
 
 .site-navigation-link {
@@ -671,8 +672,8 @@ a {
   flex-wrap: wrap;
 
   position: absolute;
-  top: 43px;
-  left: 3px;
+  top: 60px;
+  left: 224px;
 
   width: 143px;
   border-radius: 5px;
@@ -701,6 +702,7 @@ a {
 .header-text {
   width: 100%;
   text-align: right;
+  padding-top: 4px;
 }
 
 .right-nav-link {
@@ -739,4 +741,16 @@ a {
 
 .basket-link svg {
   padding-right: 8px;
+}
+
+.basket-icon {
+  fill: #343434;
+}
+
+.basket-icon__inside {
+  fill: #E84D37;
+}
+
+.basket-full a {
+  color: #323232;
 }
