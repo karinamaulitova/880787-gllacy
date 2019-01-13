@@ -19,7 +19,7 @@
       </a>
         </div>
         <ul class="site-navigation">
-          <li><a href="catalog.html" class="site-navigation-link"><span>Каталог</span></a>
+          <li class="pop-up-container"><a href="catalog.html" class="site-navigation-link"><span>Каталог</span></a>
             <ul class="catalog-pop-up pop-up">
               <li><a href="#" class="pop-up-link new">Новинки</a></li>
               <li><a href="#" class="pop-up-link">Сливочное</a></li>
@@ -33,21 +33,26 @@
         </ul>
       </nav>
       <div class="header-item">
-        <div class="search"><a href="#" class="right-nav-link search-link svg-link">
+        <div class="search">
+          <a href="#" class="right-nav-link search-link svg-link">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17" fill="#fff"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
         </a>
-          <form class="search pop-up" action="#" method="POST">
-            <input type="search" name="search" placeholder="Что ищем?">
+          <form class="search-pop-up pop-up" action="#" method="POST">
+            <input type="search" name="search" class="search-input" placeholder="Что ищем?">
           </form>
         </div>
         <div class="login"><a href="#" class="right-nav-link login-link svg-link">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></svg>Вход</a>
-          <form class="login pop-up" action="#" method="POST">
-            <input type="text" name="login" id="login-field" placeholder="Электронная почта"><br>
-            <input type="password" name="password" placeholder="Пароль">
-            <button type="submit" class="small-button">Войти</button>
-            <a href="#" class="login-form-links">Забыли пароль?</a>
-            <a href="#" class="login-form-links">Новая регистрация</a>
+          <form class="login-pop-up pop-up" action="#" method="POST">
+            <input type="text" name="login" id="login-field" class="login-form-input" placeholder="Электронная почта"><br>
+            <input type="password" name="password" class="login-form-input" placeholder="Пароль">
+            <div class="login-form-actions">
+              <button type="submit" class="small-button login-button">Войти</button>
+              <div>
+                <a href="#" class="login-form-links">Забыли пароль?</a>
+                <a href="#" class="login-form-links">Новая регистрация</a>
+              </div>
+            </div>
           </form>
         </div>
         <div class="basket"><a href="#" class="right-nav-link basket-link">
@@ -84,22 +89,22 @@
         <h2 class="visiually-hidden">Сорта мороженого</h2>
         <ul class="ice-cream-list">
           <li class="catalog-item">
-            <img src="img/catalog-ice-cream-1.png">
+            <img src="img/catalog-ice-cream-1.png" width="267" height="267" alt="фото мороженого">
             <span class="cost">310₽</span><span class="catalog-weight">/кг</span>
             <a href="ice-cream-1.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog-ice-cream-2.png">
+            <img src="img/catalog-ice-cream-2.png" width="267" height="267" alt="фото мороженого">
             <span class="cost">380₽</span><span class="catalog-weight">/кг</span>
             <a href="ice-cream-2.html">Сливочно-кофейное с кусочками шоколада</a>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog-ice-cream-3.png">
+            <img src="img/catalog-ice-cream-3.png" width="267" height="267" alt="фото мороженого">
             <span class="cost">355₽</span><span class="catalog-weight">/кг</span>
             <a href="ice-cream-3.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog-ice-cream-4.png">
+            <img src="img/catalog-ice-cream-4.png" width="267" height="267" alt="фото мороженого">
             <span class="cost">415₽</span><span class="catalog-weight">/кг</span>
             <a href="ice-cream-4.html">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
@@ -170,7 +175,7 @@
       </nav>
       <div class="copyright-item">
         <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-htmlacademy.svg">
+      <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип htmlacademy">
     </a>
         <p class="copyright">Сделано в<a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a>© 2017</p>
       </div>
