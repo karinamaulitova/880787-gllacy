@@ -109,13 +109,104 @@
     <main>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <span class="spacer"> » </span>
-        <li><a href="#">Каталог</a></li>
-        <span class="spacer"> » </span>
+        <li class="breadcrumb-catalog"><a href="#">Каталог</a></li>
         <li><a>Сливочное</a></li>
       </ul>
       <h1 class="catalog-heading">Сливочное мороженое</h1>
       <!-- Здесь будут фильтры -->
+      <form class="filter-form" action="#" method="GET">
+        <div class="filter-first-line-container">
+          <fieldset class='filter'>
+            <legend class="filter-legend">Сортировка:</legend>
+            <div class="select-container">
+              <select name="sorting" class="filter-sorting">
+                <option value="by-popularity">по популярности</option>
+                <option value="cheap-first">сначала недорогие</option>
+                <option value="expensive-first">сначала дорогие</option>
+                <option value="by-fat">по жирности</option>
+              </select>
+            </div>
+          </fieldset>
+          <div class="filter-range filter">
+            <div class="filter-legend">
+              <span class="filter-range-name">Цена:</span>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="text" name="min-price" value="100" class="price-input">руб.
+                </label>
+                <label class="max-price">
+                  - <input type="text" name="max-price" value="500" class="price-input">руб.
+                </label>
+              </div>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+          </div>
+          <fieldset class='filter'>
+            <legend class="filter-legend">Жирность:</legend>
+            <div class="fat-filter-container">
+              <label class="fat-filter-radio">
+                <input type="radio" name="fat" value="0%" class="visiually-hidden">
+                <span class="radio-indicator"></span>
+                0%
+              </label>
+              <label class="fat-filter-radio">
+                <input type="radio" name="fat" value="less-10%" class="visiually-hidden" checked>
+                <span class="radio-indicator"></span>
+                до 10%
+              </label>
+              <label class="fat-filter-radio">
+                <input type="radio" name="fat" value="less-30%" class="visiually-hidden">
+                <span class="radio-indicator"></span>
+                до 30%
+              </label>
+              <label class="fat-filter-radio">
+                <input type="radio" name="fat" value="more-30%" class="visiually-hidden">
+                <span class="radio-indicator"></span>
+                выше 30%
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="filter-second-line-container">
+          <fieldset>
+            <legend class="filter-legend">Наполнители:</legend>
+            <div class="filling-filter-container">
+              <label class="filling-filter-checkbox">
+                <input type="checkbox" name="chocolate" class="visiually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                шоколадные
+              </label>
+              <label class="filling-filter-checkbox">
+                <input type="checkbox" name="sugar-powder" class="visiually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                сахарные присыпки
+              </label>
+              <label class="filling-filter-checkbox">
+                <input type="checkbox" name="fruits" class="visiually-hidden">
+                <span class="checkbox-indicator"></span>
+                фрукты
+              </label>
+              <label class="filling-filter-checkbox">
+                <input type="checkbox" name="syrups" class="visiually-hidden">
+                <span class="checkbox-indicator"></span>
+                сиропы
+              </label>
+              <label class="filling-filter-checkbox">
+                <input type="checkbox" name="jams" class="visiually-hidden">
+                <span class="checkbox-indicator"></span>
+                джемы
+              </label>
+            </div>
+          </fieldset>
+          <input type="submit" name="apply" value="Применить" class="filter-submit">
+        </div>
+      </form>
       <section class="catalog">
         <h2 class="visiually-hidden">Каталог товаров</h2>
         <ul class="ice-cream-list">
