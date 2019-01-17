@@ -489,7 +489,7 @@ a {
 
   margin-right: 26px;
 
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 }
 
 .catalog-item:nth-of-type(4n) {
@@ -518,7 +518,7 @@ margin-right: 0;
 }
 
 .catalog-item-wrapper a {
-  display: inline-block;
+  display: block;
 
   margin-top: 8px;
   padding: 0 18px;
@@ -568,6 +568,7 @@ margin-right: 0;
   display: none;
   position: absolute;
   left: 46px;
+  bottom: 22px;
   padding: 10px 17px;
 }
 
@@ -576,7 +577,7 @@ margin-right: 0;
 }
 
 .catalog-ice-cream-list li {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 }
 
 .cost-container {
@@ -606,24 +607,71 @@ margin-right: 0;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% 100%;
+  border-radius: 15px;
+
+  margin-top: 42px;
 
   color: #323232;
   text-align: left;
 }
 
 .features h3 {
+  display: inline-block;
+
+  padding: 0 20px;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
+  letter-spacing: 0.2px;
 }
 
 .features-list {
+  position: relative;
   list-style: none;
+
+  margin-left: -15px;
+  margin-top: -22px;
+  padding: 0;
 }
 
-.features-list li:first-child::before {
-  background-image: url(../img/ice-cream.svg);
-  background-repeat: no-repeat;
+.features-list li {
+  position: relative;
+
+  padding-left: 91px;
+  margin-top: 21px;
+}
+
+.features-list li::before {
+  content: "";
+
+  position: absolute;
+  top: -14px;
+  left: 35px;
+
+  height: 49px;
+  width: 49px;
+}
+
+.features-list li:nth-of-type(2n)::before {
+  left: 33px;
+}
+
+.features-list li:first-of-type::before {
+
+  background: url("../img/ice-cream.svg") no-repeat center;
+}
+
+.features-list li:nth-of-type(2)::before {
+  background: url("../img/cow.svg") no-repeat center;
+}
+
+.features-list li:nth-of-type(3)::before {
+  background: url("../img/eco.svg") no-repeat center;
+}
+
+.features-list li:last-of-type::before {
+  background: url("../img/thermometer.svg") no-repeat center;
 }
 
 .blog {
@@ -1528,6 +1576,7 @@ margin-right: 0;
   width: 250px;
 
   -webkit-appearance: none;
+  -moz-appearance: none;
 
   z-index: 2;
 
