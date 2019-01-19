@@ -1892,7 +1892,7 @@ a {
 .filter-sorting-select {
   position: relative;
 
-  width: 250px;
+  width: 100%;
 
   -webkit-appearance: none;
   -moz-appearance: none;
