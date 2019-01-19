@@ -160,6 +160,8 @@ a {
 }
 
 .login-form-links {
+  display: block;
+
   font-size: 13px;
   line-height: 24px;
   color: #323232;
@@ -304,8 +306,7 @@ a {
 
 .slide-title {
   width: 700px;
-  margin: 0 auto;
-  margin-bottom: 27px;
+  margin: 0 auto 27px;
 
   font-size: 60px;
   line-height: 60px;
@@ -822,8 +823,10 @@ a {
 .feedback-pop-up {
   display: block;
   position: fixed;
-  top: 337px;
+  top: 50%;
   left: 50%;
+
+  transform: translateY(-50%);
 
   padding: 17px 26px 27px 24px;
   margin-left: -237px;
@@ -1152,15 +1155,15 @@ a {
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translateY(-40%);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translateY(-55%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(-50%);
   }
 }
 
@@ -1872,6 +1875,7 @@ a {
 .filter-first-line-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .filter-second-line-container {
@@ -1892,10 +1896,16 @@ a {
 
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
 
   z-index: 2;
 
   cursor: pointer;
+}
+
+.filter-sorting-select::-ms-expand {
+  display: none;
 }
 
 .select-container::after {
