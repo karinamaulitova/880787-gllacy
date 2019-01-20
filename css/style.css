@@ -595,7 +595,7 @@ a {
 
 .catalog-item:hover .hover-button {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .catalog-item:hover img,
@@ -643,7 +643,7 @@ a {
 
 .features h3 {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
 
   padding: 0 20px;
 
@@ -722,7 +722,7 @@ a {
 
 .blog a {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
 
   font-size: 24px;
   font-weight: 700;
@@ -857,7 +857,7 @@ a {
 
 .feedback-button {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: bottom;
 
   white-space: nowrap;
 
@@ -945,7 +945,7 @@ a {
 
 .feedback-pop-up-button {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: bottom;
 
   padding: 10px 24px;
   margin-top: 22px;
@@ -968,7 +968,7 @@ a {
   content: "";
 
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
 
   width: 18px;
   height: 17px;
@@ -1104,7 +1104,7 @@ a {
 
 .pageing a {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: bottom;
 
   box-sizing: border-box;
   padding: 5px 8px;
@@ -1465,10 +1465,6 @@ a {
   font-weight: 500;
 }
 
-.right-nav-link svg {
-  vertical-align: baseline;
-}
-
 .search-link {
   padding: 8px;
   margin-right: 10px;
@@ -1744,7 +1740,7 @@ a {
   width: 194px;
 
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
 
   position: relative;
 
@@ -1828,14 +1824,11 @@ a {
 
 .price-controls {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
 
 .price-input {
   width: 27px;
-
-  display: inline-block;
-  vertical-align: baseline;
 
   padding: 0;
 
